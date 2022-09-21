@@ -1,0 +1,363 @@
+    body {
+        background-color: white;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    /*################################################################*/
+    /*##################          STRUCTURE         ##################*/
+    /*################################################################*/
+    
+    .main-container {
+        float: left;
+        width: 80%;
+    }
+    
+    .side-panel {
+        float: left;
+        width: 10%;
+        border-top: 1px solid white;
+    }
+    
+    .outer-grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-auto-rows: auto, 200px;
+        align-content: stretch;
+        justify-content: space-around;
+    }
+    
+    .inner-grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+        grid-auto-rows: minmax(150px, auto);
+        grid-gap: 5px;
+        justify-content: space-around;
+        align-content: stretch;
+    }
+    
+    .grid-item {
+        margin: 10px;
+        padding-top: 10px;
+        margin: auto
+    }
+    /*################################################################*/
+    /*##################          SECTIONS          ##################*/
+    /*################################################################*/
+    
+    .home {
+        background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/startersite/images/16830190/1593657250501.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 600px;
+        font-size: larger;
+    }
+    
+    #munamii-logo {
+        max-width: 200px;
+        width: 40%;
+        border: 6px solid rgb(72, 127, 109);
+        box-shadow: 5px 5px 20px lightgray;
+        margin-top: 20px;
+        border-radius: 50px;
+    }
+    
+    .about {
+        background-image: url(https://scontent.fbma6-1.fna.fbcdn.net/v/t39.30808-6/291978641_435191085283743_2310157701605098889_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=LY7ZCMocgz8AX9TLX1h&_nc_ht=scontent.fbma6-1.fna&oh=00_AT-F7oP8ZuoE1UMMtvpd6AaauaWcnlvRcQoH6AmvmzPKAg&oe=632F8623);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 600px;
+        font-size: large;
+        text-align: center;
+    }
+    
+    .contact {
+        font-size: large;
+    }
+    
+    .contact img {
+        border-radius: 50px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        max-width: 600px;
+        width: 80%;
+    }
+    /*################################################################*/
+    /*##################       HEADER & NAVBAR      ##################*/
+    /*################################################################*/
+    
+    #header {
+        grid-column: 1 / -1;
+    }
+    
+    #logo {
+        display: block;
+        width: fit-content;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5px;
+    }
+    
+    #logo-container {
+        background-color: rgb(140, 200, 180);
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+        margin: auto;
+    }
+    
+    #navbar {
+        grid-column: 1 /-1;
+        min-width: 35%;
+        padding: 15px;
+        margin: auto;
+        color: rgb(72, 127, 109);
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-bottom: 3px solid rgb(72, 127, 109);
+    }
+    
+    #navbar a {
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(82, 53, 42);
+        font-weight: 600;
+        text-decoration: none;
+    }
+    
+    #navbar a:hover {
+        color: rgb(140, 200, 180);
+        text-shadow: 1px 1px 2px lightgrey;
+    }
+    
+    .navbar-link {
+        font-size: large;
+    }
+    /*################################################################*/
+    /*##################           FOOTER           ##################*/
+    /*################################################################*/
+    
+    .footer {
+        height: 200px;
+        width: 100vw;
+        background-color: black;
+        border: 1px solid grey;
+    }
+    
+    .link-logo {
+        width: 33%;
+    }
+    
+    .link-logo img {
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 50px;
+        margin: 50px;
+    }
+    
+    #footer {
+        display: flex;
+        width: 60%;
+        margin-left: 25%;
+        color: rgb(82, 53, 42);
+    }
+    
+    #facebook {
+        box-shadow: 2px 2px 8px darkgrey;
+        border-radius: 50px;
+    }
+    
+    #facebook:hover {
+        box-shadow: 4px 4px 12px grey;
+    }
+    
+    #email {
+        box-shadow: 2px 2px 8px darkgrey;
+        border-radius: 50px;
+    }
+    
+    #email:hover {
+        box-shadow: 4px 4px 12px grey;
+    }
+    
+    #instagram {
+        box-shadow: 2px 2px 8px darkgrey;
+        border-radius: 15px;
+    }
+    
+    #instagram:hover {
+        box-shadow: 4px 4px 12px grey;
+    }
+    /*################################################################*/
+    /*##################          PRODUCTS          ##################*/
+    /*################################################################*/
+    
+    .section-header {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        color: white;
+        text-shadow: 1px 1px 3px grey;
+    }
+    
+    .baked-goods-container {
+        border-radius: 20px;
+        width: 150px;
+        box-shadow: 2px 2px 12px darkgray;
+        text-shadow: 1px 1px 4px darkgrey;
+        margin-bottom: 25px;
+    }
+    
+    .baked-goods-container:hover {
+        box-shadow: 3px 3px 12px grey;
+        text-shadow: 3px 3px 4px grey;
+    }
+    
+    .baked-goods {
+        border-radius: 20px 20px 0 0;
+        height: 150px;
+        width: 150px;
+        background-color: rgb(248, 131, 136);
+    }
+    
+    .baked-goods img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .description {
+        display: flow-root;
+        text-align: center;
+        width: 150px;
+        border-radius: 0 0 20px 20px;
+        color: white;
+        text-shadow: 1px 1px 1px grey;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        border-top: none;
+    }
+    
+    .pcategory {
+        margin: 0 15px 15px;
+    }
+    /*################################################################*/
+    /*##################            MISC            ##################*/
+    /*################################################################*/
+    
+    .whitetext {
+        color: white;
+    }
+    
+    .browntext {
+        color: rgb(82, 53, 42);
+    }
+    
+    .transparent-text-container {
+        margin-top: 15px;
+        padding: 1px 15px 10px 15px;
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, .6);
+        color: rgb(82, 53, 42);
+        text-shadow: 1px 1px 1px rgb(245, 195, 215);
+        box-shadow: 2px 2px 12px lightgrey;
+    }
+    
+    .infobox {
+        max-width: 600px;
+        margin: auto;
+        padding: 25px 50px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        text-shadow: 2px 2px 12px black;
+    }
+    
+    .dot {
+        color: rgb(72, 127, 109);
+    }
+    
+    .rndbox {
+        border-radius: 25px;
+        text-shadow: 1px 1px 2px darkgray;
+        box-shadow: 1px 1px 12px lightgray;
+    }
+    
+    .lightteal {
+        background-color: rgb(205, 245, 225);
+        border: 5px solid rgb(245, 195, 215);
+    }
+    
+    .lightpink {
+        background-color: rgb(255, 205, 225);
+        border: 5px solid rgb(195, 235, 215);
+    }
+    
+    .gradient-teal {
+        background-image: linear-gradient(rgb(205, 245, 225), rgb(195, 235, 215));
+    }
+    
+    .gradient-teal-dark {
+        background-image: linear-gradient(rgb(175, 215, 195), rgb(165, 205, 185));
+    }
+    
+    .gradient-pink {
+        background-image: linear-gradient(rgb(245, 195, 215), rgb(255, 205, 225));
+    }
+    
+    .gradient-pink-dark {
+        background-image: linear-gradient(rgb(235, 165, 185), rgb(235, 175, 195));
+    }
+    /*################################################################*/
+    /*##################          MEDIA QUERIES          ##################*/
+    /*################################################################*/
+    
+    @media all and (max-width: 900px) {
+        .main-container {
+            width: 90%;
+        }
+        .side-panel {
+            width: 5%;
+        }
+        .navbar-link {
+            font-size: x-large;
+        }
+    }
+    
+    @media all and (max-width: 768px) {
+        .main-container {
+            width: 100%;
+        }
+        .side-panel {
+            width: 0%;
+        }
+        .navbar-link {
+            display: block;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: x-large;
+            background-color: rgb(225, 255, 235);
+            box-shadow: 1px 1px 4px darkgrey;
+            border-radius: 25px;
+        }
+        .navbar-link:hover {
+            background-color: white;
+            box-shadow: 2px 2px 6px grey;
+        }
+        .link-logo a img {
+            margin-left: 25%;
+            margin-right: 25%;
+            background-image: linear-gradient(rgb(205, 245, 225), rgb(195, 235, 215));
+        }
+    }
